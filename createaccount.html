@@ -1,0 +1,122 @@
+<html>
+<head>
+  <title>Create Account </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+  function validate()
+  {
+    /*if (document.create_account_form.First_name.value=" ")
+    {
+      alret="Dont you have a name";
+      document.create_account_form.First_name.focus();
+      return false;
+
+    }
+    if (document.create_account_form.Last_name.value=" ")
+    {
+      alret="Dont you have a last name";
+      document.create_account_form.Last_name.focus();
+      return false;
+
+    }*/
+    var phoneno = /^\d{10}$/;
+    if(document.create_account_form.number.value.match(phoneno))
+        {
+              }
+      else
+        {
+        alert("Enter valid Phone number");
+        return false;
+        }
+
+     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.create_account_form.E-mail.value))
+      {
+
+      }
+      else {
+        alert("You have entered an invalid email address!")
+        return false;
+    }
+    var firstpassword=document.create_account_form.cpassword.value;
+var secondpassword=document.create_account_form.repassword.value;
+
+if(firstpassword==secondpassword){
+return true;
+}
+else{
+alert("password one and two must be same!");
+return false;
+}
+  }
+</script>
+  <style media="screen">
+  .header__container{
+     background-color:#F3F781;
+     height:150px;
+    }
+    .login__container{
+      text-align: left;
+
+    }
+    /* .header-link{
+      background-color:Gold;
+      height:56px;
+
+    } */
+    .header__wrapper{
+      text-align: right;
+    }
+    .wrapper{
+      text-align: center;
+    }
+
+    .header__wrapper{
+      text-align: right;
+    }
+    .create_account_form
+    {
+      text-align: center;
+      
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header__container">
+  <div id="login-navigation" class="login__container">
+&emsp;&emsp;&emsp;
+<div style=" padding-left: 7.5em"class="header-link">
+<button style="background-color: Tomato; height:50px"><a href="login.html " class="signin-link" id="signin-link">Log in</a></button>
+
+<div style=" padding-right: 7.5em; padding-bottom: 1.5em;"class="header__wrapper">
+ <a href="homepage.html" class="logo__container" title="Restaurants in Mumbai">
+ <img src="logo.jpeg" alt="Restaurants in Mumbai" width="300px" height="150px"/>
+ </a>
+</div>
+</div>
+
+
+<div class="create_account_form" style="background-image:  ">
+<form name="create_account_form" onsubmit="return validate()">
+  <br><br>
+ First name:<input type="text" name="First_name" required><br><br><br>
+ Last name:<input type="text" name="Last_name" required ><br><br><br>
+ Gender:<br><br><input type="radio" name="Gender" value="male" checked>Male<br><br>
+        <input type="radio" name="Gender" value="female">Female<br><br>
+        <input type="radio" name="Gender" value="others">others<br><br>
+
+
+ Birth date:<input type="date" name="Birthdate"><br><br><br>
+ Phone number:<input type="number" name="number" required><br><br><br>
+ E-mail ID:<input type="email" name="E-mail" required<br><br><br>
+ Create Password:<input type="password" name="cpassword" required><br><br><br>
+ Re-enter Password:<input type="password" name="repassword"><br><br><br>
+
+ <input type="submit" name="submit" value="submit">
+</form>
+</div>
+</body>
+</html>

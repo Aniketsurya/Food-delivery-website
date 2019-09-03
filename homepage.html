@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Swad Ae Ghar </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+        function phonenumber(PhoneNumber)
+{
+  var phoneno = /^\d{10}$/;
+  if(PhoneNumber.value.match(phoneno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("please enter 10 digit mobile phone number.");
+        return false;
+        }
+}
+
+
+
+  </script>
+<style>
+  .header__container{
+   background-color:#F3F781;
+   height:150px;
+  }
+  .login__container{
+    text-align: left;
+
+  }
+  /* .header-link{
+    background-color:Gold;
+    height:56px;
+
+  } */
+  .header__wrapper{
+    text-align: right;
+  }
+  .wrapper{
+    text-align: center;
+  }
+  .header_middle_1
+  {
+    position:relative;min-height:1px;padding-left:10px;padding-right:10px;float:left;width:33.33333333%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box
+  }
+  .header_middle_2{
+    position:relative;min-height:1px;padding-left:10px;padding-right:10px;float:left;width:33.33333333%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box
+  }
+  .header_middle_3{
+    position:relative;min-height:1px;padding-left:10px;padding-right:10px;float:left;width:33.33333333%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box
+  }
+  </style>
+</head>
+<body>
+
+
+<div class="header__container">
+  <div id="login-navigation" class="login__container">
+  &emsp;&emsp;&emsp;
+ <div style=" padding-left: 7.5em"class="header-link">
+  <button style="background-color: Tomato; height:70px"><a href="login.html" class="signin-link" id="signin-link">Log in</a></button>
+
+  <button style="background-color: Tomato; height:70px"><a href="createaccount.html " class="signup-link" id="signup-link">Create an account</a></button>
+
+</div>
+</div>
+
+<div style=" padding-right: 7.5em; padding-bottom: 1.5em;"class="header__wrapper">
+ <a href="homepage.html" class="logo__container" title="Restaurants in Mumbai">
+ <img src="logo.jpeg" alt="Restaurants in Mumbai" width="300px" height="150px"/>
+ </a>
+</div>
+
+</div>
+<div class="wrapper" style="background-image:  ">
+  <h1 style="height:40px">Chaliye milkar ghar ka swaad चखे </h1>
+  <button style="height:50px; border-radius:6px;text-align: center; background-color:LightGreen; border:3px solid Grey ;color:Black"> <a href=" " >Lets Explore </a> </button> <br>
+  <br><br>
+  <button style="height:50px; border-radius:6px;text-align: center;padding-left: 4em;background-color:LightGreen; border:3px solid Grey ;color:Black"><a href="login.html" >Login</a></button>
+  Or
+  <button style="height:50px; border-radius:6px;text-align: center;padding-left: 6em;background-color:LightGreen; border:3px solid Grey ;color:Black"><a href="createaccount.html " >Create an account</a></button><br>
+  <br><br>
+  Orelse Enter your Phone number to login:<form onsubmit="return phonenumber()"><input  type="text" name="PhoneNumber" style=""></form>
+  <button type="submit" style="height:50px; border-radius:6px;text-align: center;background-color:LightGreen; border:3px solid Grey ;color:Black"><a href=" " >Send OTP</a></button>
+</div>
+<br><br><br><br><br><br>
+
+<div class="wrapper" style="-moz-box-sizing:border-box;">
+  <div class="header_middle_1">
+      <div><img src="delivery_man.jpeg" alt="Swad ae Ghar" width="300px" height="150px"/></div>
+      <div><strong>Food delivery </strong>
+        at your doorstep.
+      </div>
+  </div>
+  <div class="header_middle_2">
+    <div><img src="quality_products.jpeg" alt="Swad ae Ghar" width="300px" height="150px"/></div>
+    <div>
+      Serving the <strong>Best Quality</strong> Food. </div>
+  </div>
+  <div class="header_middle_3">
+    <div><img src="Food-Delivery.jpeg" alt="Swad ae Ghar" width="300px" height="150px"/></div>
+    <div><strong>Flexible payment methods </strong>accepted.</div>
+  </div>
+</div>
+</body>
+</html>
