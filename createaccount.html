@@ -51,7 +51,7 @@ return false;
 </script>
   <style media="screen">
   .header__container{
-     background-color:#F3F781;
+     background-color:#70dbb8;
      height:150px;
     }
     .login__container{
@@ -76,20 +76,39 @@ return false;
     .create_account_form
     {
       text-align: center;
-      
+      font-family: monospace;
+      text-decoration-style: wavy;
+      color:#ffffe0;
+      font-size: 20px;
+      font-style: oblique;
+      font-family: cursive;
+      font-weight: bolder;
+      font-stretch: extra-expanded;
     }
+
+    .bg
+      { background-image:url('createacc.jpg');
+      background-repeat: no-repeat;
+       height:100%;
+       width:100%;
+       background-position: center;
+        background-size: cover;
+
+      }
 
 </style>
 
 </head>
 
 <body>
-
+<div class="bg">
 <div class="header__container">
   <div id="login-navigation" class="login__container">
 &emsp;&emsp;&emsp;
 <div style=" padding-left: 7.5em"class="header-link">
-<button style="background-color: Tomato; height:50px"><a href="login.html " class="signin-link" id="signin-link">Log in</a></button>
+
+<button style="background-color: Tomato; border-radius:20px;padding: 15px;height:70px;border:3px solid Grey ;color:Black;font-style: normal;font-family: cursive;font-weight: 300;font-size: 20px;page-break-inside:auto" ><a href="login.html" class="signin-link" id="signin-link">Log in</a>
+</button>
 
 <div style=" padding-right: 7.5em; padding-bottom: 1.5em;"class="header__wrapper">
  <a href="homepage.html" class="logo__container" title="Restaurants in Mumbai">
@@ -97,26 +116,22 @@ return false;
  </a>
 </div>
 </div>
+<div class="create_account_form">
+<form name="create_account_form" action="customers_accounts.php" method="post" onsubmit="return validate()">
+ First name:<input type="text" name="First_name" required><br><br>
+ Last name:<input type="text" name="Last_name" required ><br><br>
+ Gender:    <input type="radio" name="Gender" value="male" style="display:inline" checked>Male<br>
+            <input type="radio" name="Gender" value="female" style="display:inline">Female<br>
+            <input type="radio" name="Gender" value="others" style="display:inline">Others<br><br>
 
-
-<div class="create_account_form" style="background-image:  ">
-<form name="create_account_form" onsubmit="return validate()">
-  <br><br>
- First name:<input type="text" name="First_name" required><br><br><br>
- Last name:<input type="text" name="Last_name" required ><br><br><br>
- Gender:<br><br><input type="radio" name="Gender" value="male" checked>Male<br><br>
-        <input type="radio" name="Gender" value="female">Female<br><br>
-        <input type="radio" name="Gender" value="others">others<br><br>
-
-
- Birth date:<input type="date" name="Birthdate"><br><br><br>
- Phone number:<input type="number" name="number" required><br><br><br>
+ Birth date:<input type="date" name="Birthdate"><br><br>
+ Phone number:<input type="number" name="number" required><br><br>
  E-mail ID:<input type="email" name="E-mail" required<br><br><br>
- Create Password:<input type="password" name="cpassword" required><br><br><br>
- Re-enter Password:<input type="password" name="repassword"><br><br><br>
-
- <input type="submit" name="submit" value="submit">
-</form>
+ Create Password:<input type="password" name="cpassword" required><br><br>
+ Re-enter Password:<input type="password" name="repassword"><br><br>
+ <input type="submit" name="submit" value="submit" style="height:50px; border-radius:6px;text-align: center;background-color:LightGreen; border:3px solid Grey ;color:Black;font-style: normal;font-family: cursive;font-weight: 300;font-size: 20px;page-break-inside:auto">
+</form><br><br>
+</div>
 </div>
 </body>
 </html>

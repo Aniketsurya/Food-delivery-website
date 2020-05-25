@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Checkout</title>
+  <script type="text/javascript">
+  document.getElementById('butt').addEventListener('click',
+  function(){
+    document.querySelector('.bg-modal').style.display = 'flex';
+  });
+
+  document.querySelector('.close').addEventListener('click',
+  function(){
+    document.querySelector('.bg-modal').style.display = 'none';
+  });
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="popup.css">
+
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="af ar bp ba br ia aj">
+    <div class="header__container">
+
+    <div style =" padding-right: 7.5em ; padding-bottom: 1.5em;"class="header__wrapper">
+     <a href="homepage.html" class="logo__container" title="Restaurants in Mumbai">
+     <img src="logo.jpeg" alt="Restaurants in Mumbai" width="300px" height="150px"/>
+     </a>
+     </div>
+   </div><br>
+      </div>
+      <div class="h7 ib ic">Checkout</div>
+      <div class="c9 ay ar ba"></div>
+  </div>
+  <div class="row">
+  <div class="col-75">
+    <div class="container">
+
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <h3>Select Your Payment Method </h3>
+            
+
+        <input type="button" onclick="window.location.href = 'onlinepay.html';" value="Online Payment" style="background-color:#696969;color: #fffafa;padding: 12px;margin: 10px 0;border: none;width:200px;border-radius: 3px;cursor: pointer;font-size: 17px;"><br><br>
+        <form method="post" action="fcheckout.php">
+        <input type="submit" name="checkout" value="COD" style="background-color:#696969;color: #fffafa;padding: 12px;margin: 10px 0;border: none;width:200px;border-radius: 3px;cursor: pointer;font-size: 17px;"><br><br>
+      </form>
+
+</div>
+
+</body>
+</html>

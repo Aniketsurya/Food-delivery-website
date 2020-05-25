@@ -1,0 +1,33 @@
+<html>
+<head>
+  <script type="text/javascript">
+  document.getElementById('button').addEventListener('click',
+  function() {
+    document.querySelector('.bg-modal').style.display = 'flex';
+  });
+
+  document.querySelector('.close').addEventListener('click',
+  function(){
+    document.querySelector('.bg-modal').style.display = 'none';
+  }
+  );
+  </script>
+  <titile>Pop-up</title>
+  <link rel="stylesheet" type="text/css" href="css/popup.css">
+  </head>
+  <body>
+    <a href="checkout.html"target="_blank"title="">
+      <a href="onlinepay.html"target="_blank"title="">
+
+
+<div class="bg-modal">
+ <div class="modal-content">
+   <div class="close">+</div>
+   <h3> Your order is ACCEPTED Sucessfully!! </h3>
+   <form action="" onsubmit="return(function())">
+     <input type="submit" onclick="window.location.href = '';" value="OK">
+     </form>
+   </div>
+  </div>
+</body>
+</html>

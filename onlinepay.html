@@ -1,0 +1,80 @@
+<html>
+<head>
+  <title>Online payment </title>
+  <style media="screen">
+  .header__container{
+     background-color:#70dbb8;
+     height:150px;
+    }
+    .login__container{
+      text-align: left;
+    }
+      .header__wrapper{
+        text-align: right;
+      }
+      .wrapper{
+        text-align: left;
+        padding-left:10%;
+        padding-top: 7%;
+      }
+
+      .bg
+        { background-image:url('online3.jpg');
+        background-repeat: no-repeat;
+         height:90%;
+         width:100%;
+         background-position: center;
+          background-size: cover;
+
+        }
+
+        .form_style
+        {
+          font-family: monospace;
+          text-decoration-style: wavy;
+          color: #fdfd96;
+          font-size: 25px;
+          font-style: oblique;
+          font-family: cursive;
+          font-weight: bolder;
+          font-stretch: extra-expanded;
+        }
+
+  </style>
+  </head>
+  <body>
+    <div class="header__container">
+
+    <div style =" padding-right: 7.5em ; padding-bottom: 1.5em;"class="header__wrapper">
+     <a href="homepage.html" class="logo__container" title="Restaurants in Mumbai">
+     <img src="logo.jpeg" alt="Restaurants in Mumbai" width="300px" height="150px"/>
+     </a>
+     </div>
+   </div>
+   <br><br>
+   <div class="bg">
+     <br><br>
+         <form method="post" action="fcheckout.php">
+          <div class="form_style">
+
+<label for="cname">Name on Card :</label>
+<input type="text" id="cname" name="cardname" placeholder="" style="font-size:16pt"><br><br>
+<label for="ccnum">Credit card number :</label>
+<input type="text" id="ccnum" name="cardnumber" placeholder="" style="font-size:16pt"><br><br>
+<label for="expmonth">Exp Month :</label>
+<input type="text" id="expmonth" name="expmonth" placeholder="" style="font-size:16pt"><br><br>
+
+    <label for="expyear">Exp Year :</label>
+    <input type="text" id="expyear" name="expyear" placeholder="" style="font-size:16pt"><br><br>
+
+
+    <label for="cvv">CVV :</label>
+    <input type="text" id="cvv" name="cvv" placeholder="" style="font-size:16pt"><br><br><br>
+
+    <input type="submit" value="Submit" name="checkout" style="background-color:#fffacd; border-radius:20px;padding: 15px;padding-top: 5px;height:50px;border:4px solid Grey ;color:Black;font-style: normal;font-family: cursive;font-weight: 300;font-size: 20px">
+</div>
+</div>
+
+</form>
+</body>
+</html>
